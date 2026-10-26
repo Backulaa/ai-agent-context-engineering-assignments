@@ -1,0 +1,23 @@
+{
+  "goal": "Fix refresh-token race condition.",
+  "current_state": "Simulated investigation remains unresolved: test_concurrent_refresh and test_parallel_rotation still fail after increasing refresh token TTL. No root cause has been confirmed.",
+  "constraints": [
+    "Keep API backward compatible.",
+    "Do not repeat the TTL experiment.",
+    "Do not claim a root cause is confirmed unless tested."
+  ],
+  "findings": [
+    "Two concurrent refresh calls can reuse the same refresh token.",
+    "The refresh flow reads and updates token state; synchronization is unverified.",
+    "Locking around refresh has not yet been inspected."
+  ],
+  "failed_attempts": [
+    "Increased refresh token TTL to avoid expiry collisions. This did not help: test_concurrent_refresh and test_parallel_rotation still fail."
+  ],
+  "files": [
+    "auth.ts",
+    "session.ts",
+    "auth.test.ts"
+  ],
+  "next_action": "Inspect locking around refresh before changing code."
+}

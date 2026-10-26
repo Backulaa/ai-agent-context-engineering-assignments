@@ -1,0 +1,31 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Generated runtime data
+/data/
+/b2_data/
+/b2_dynamic_data/
+
+# Editor
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated B1/B2 runtime data
+/data/
+/b2_data/
+/b2_dynamic_data/
+
+# Keep evidence for grading
+!/evidence/

@@ -1,0 +1,11 @@
+paths = tools.list_files("*.log")
+counts = new_counter()
+per_file = new_counter()
+for path in paths:
+    raw = tools.read_file(path)
+    for line in raw.splitlines():
+        code = extract_error_code(line)
+        if code:
+            counter_add(counts, code)
+            counter_add(per_file, path.name)
+result = make_findings(counts, per_file, tools, 5)

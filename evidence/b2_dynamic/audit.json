@@ -1,0 +1,13 @@
+{
+  "runtime": "restricted_AST_interpreter_no_exec_eval",
+  "allowed_tools": [
+    "list_files",
+    "read_file",
+    "extract_error_code",
+    "counter_add",
+    "make_findings"
+  ],
+  "program_sha256": "66c1415c7808c8442811c6f9673a8360eb094b4da0cdcb6dd703c1bafe5f393a",
+  "files_read": 100,
+  "raw_logs_in_model_input": false
+}

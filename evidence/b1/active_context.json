@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "You are a troubleshooting agent in a SIMULATED investigation. Preserve current goal, constraints, findings, failed fixes, and the next action. Do not claim a root cause is confirmed if it has not been tested."
+  },
+  {
+    "role": "user",
+    "content": "SESSION RESUMED. Work ONLY from this checkpoint; the original logs are archived and not available in the active context:\n{\n  \"goal\": \"Fix refresh-token race condition.\",\n  \"current_state\": \"Simulated investigation remains unresolved: test_concurrent_refresh and test_parallel_rotation still fail after increasing refresh token TTL. No root cause has been confirmed.\",\n  \"constraints\": [\n    \"Keep API backward compatible.\",\n    \"Do not repeat the TTL experiment.\",\n    \"Do not claim a root cause is confirmed unless tested.\"\n  ],\n  \"findings\": [\n    \"Two concurrent refresh calls can reuse the same refresh token.\",\n    \"The refresh flow reads and updates token state; synchronization is unverified.\",\n    \"Locking around refresh has not yet been inspected.\"\n  ],\n  \"failed_attempts\": [\n    \"Increased refresh token TTL to avoid expiry collisions. This did not help: test_concurrent_refresh and test_parallel_rotation still fail.\"\n  ],\n  \"files\": [\n    \"auth.ts\",\n    \"session.ts\",\n    \"auth.test.ts\"\n  ],\n  \"next_action\": \"Inspect locking around refresh before changing code.\"\n}"
+  }
+]

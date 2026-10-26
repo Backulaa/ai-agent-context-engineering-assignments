@@ -1,0 +1,13 @@
+{
+  "files_read_locally": 100,
+  "lines_processed_locally": 12000,
+  "bytes_read_locally": 2038324,
+  "naive_raw_context_estimated_tokens": 615424,
+  "codegen_input_estimated_tokens": 364,
+  "answer_input_estimated_tokens": 348,
+  "two_request_input_estimated_tokens": 712,
+  "estimated_input_reduction_percent": 99.88,
+  "token_measurement": "local estimate only; excludes outputs and request wrappers",
+  "program_sha256": "66c1415c7808c8442811c6f9673a8360eb094b4da0cdcb6dd703c1bafe5f393a",
+  "raw_logs_sent_to_llm": false
+}

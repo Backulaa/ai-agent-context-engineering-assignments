@@ -1,0 +1,6 @@
+{
+  "source": "llm_generated_program",
+  "model": "cx/gpt-6.1-sol",
+  "sha256": "66c1415c7808c8442811c6f9673a8360eb094b4da0cdcb6dd703c1bafe5f393a",
+  "question": "Phân tích toàn bộ .log: lỗi nào xuất hiện nhiều nhất, số lần, top 5 file chứa nhiều lỗi?"
+}

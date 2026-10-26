@@ -1,0 +1,7 @@
+{
+  "estimated_tokens_before": 13243,
+  "estimated_tokens_after": 345,
+  "reduction_percent": 97.39,
+  "threshold_tokens": 2500,
+  "token_measurement": "tiktoken estimate"
+}

@@ -1,0 +1,43 @@
+{
+  "dataset": "synthetic local log data",
+  "files_scanned": 100,
+  "lines_scanned": 12000,
+  "error_events": 2094,
+  "error_counts": [
+    {
+      "code": "REFRESH_RACE",
+      "count": 1091
+    },
+    {
+      "code": "UPSTREAM_TIMEOUT",
+      "count": 620
+    },
+    {
+      "code": "DB_POOL_EXHAUSTED",
+      "count": 383
+    }
+  ],
+  "top_5_files": [
+    {
+      "file": "service-014.log",
+      "errors": 22
+    },
+    {
+      "file": "service-015.log",
+      "errors": 22
+    },
+    {
+      "file": "service-016.log",
+      "errors": 22
+    },
+    {
+      "file": "service-017.log",
+      "errors": 22
+    },
+    {
+      "file": "service-018.log",
+      "errors": 22
+    }
+  ],
+  "note": "Counts only; does not prove root cause."
+}

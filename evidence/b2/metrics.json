@@ -1,0 +1,11 @@
+{
+  "files_read_by_runtime": 100,
+  "raw_log_bytes_processed_locally": 2038324,
+  "log_lines_processed_locally": 12000,
+  "naive_raw_prompt_estimated_tokens": 615422,
+  "code_mode_prompt_estimated_tokens": 343,
+  "estimated_reduction_percent": 99.94,
+  "estimate_only_not_real_api_usage": true,
+  "raw_logs_sent_to_llm": false,
+  "model_request_created": true
+}
